@@ -1,0 +1,229 @@
+/*
+
+VAR em CSS
+
+:root {
+
+    --NomeVar: blue;
+}
+
+Assim posso muda as coisas so de uma vez
+
+*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: Android;
+    src: url(../Items/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --Nomevar: blue;
+
+    --fonte: Arial, verdana, sans-serif;
+    --fonte-DD: 'Android', Arial;
+}
+
+body {
+    background-color: rgba(0, 255, 0, 0.479);
+
+    font: 1em;
+    font-family: var(--fonte);
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(2, 87, 2), rgb(8, 236, 46));
+
+    width: auto;
+    padding: 20px;
+    min-height: 180px;
+
+    font-family: var(--fonte-DD);
+}
+
+.Se {
+    text-align: center;
+
+    color: white;
+
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.308);
+}
+
+nav {
+    font-family: var(--fonte-DD);
+
+    background: linear-gradient(90deg, green, rgb(47, 224, 77) 20%);
+
+    padding: 10px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.363)
+}
+
+.Angor {
+    color: white;
+
+    margin: 10px;
+    padding: 8px;
+
+    text-decoration: none;
+
+}
+
+.Angor:hover {
+    background-color: rgba(0, 255, 0, 0.932);
+
+    color: black;
+
+    transition-duration: 0.6s;
+}
+
+.Link {
+    background-color: rgb(122, 231, 122);
+    color: rgb(6, 126, 32);
+
+    margin: 8px;
+    padding: 2px 0px;
+
+    text-decoration: none;
+}
+
+.Link:hover {
+    color: rgb(10, 202, 154);
+
+    text-decoration: underline;
+}
+
+.Link::after{
+    content: '\0020\1f517';
+}
+
+main {
+    min-width: 300px;
+    max-width: 850px;
+
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    display: block;
+
+    margin: auto;
+    width: 100%;
+}
+
+.pequena {
+    display: block;
+
+    max-width: 350px;
+
+    margin: auto;
+}
+
+article {
+    margin: auto;
+
+    background-color: white;
+    color: green;
+}
+
+h1 {
+    margin: 0px 10px;
+}
+
+h2 {
+    margin: 0px 10px;
+    padding: 4px;
+
+    background: linear-gradient(to right, rgba(14, 243, 14, 0.63), transparent);
+}
+
+p {
+    color: black;
+
+    margin: 9px;
+
+    text-indent: 20px;
+    line-height: 1em;
+}
+
+strong {
+    color: rgb(6, 255, 6);
+
+}
+
+.video{
+    background-color: rgba(18, 182, 18, 0.658);
+
+    margin: 0 0 30px 0;
+    padding-bottom: 56%;
+    position: relative;
+
+}
+
+.video>iframe{
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+section {
+    background-color: green;
+
+    margin: 10px;
+    padding: 5px;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.342);
+}
+
+ul {
+    list-style-position: inside;
+
+    list-style-type: '\2714\0020';
+
+    columns: 2;
+}
+
+li:hover{
+    color: rgb(43, 226, 211);
+}
+
+ul li {
+    color: black;
+}
+
+h3 {
+    background-color:rgb(0, 255, 0);
+
+    margin: -5px -6px 3px -5px;
+    padding: 5px;
+
+    border-radius: 10px 10px 0 0;
+
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: black;
+    color: red;
+
+
+    padding: 5px;
+
+    text-align: center;
+}
